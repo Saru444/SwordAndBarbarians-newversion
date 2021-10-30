@@ -32,16 +32,16 @@ namespace SwordAndBarbarians
                 BigAttack(userPlayer);
             }
         }
-        public bool Winner(Combatant player,Combatant computer)
-        {        
+        public bool Winner(Combatant player, Combatant computer)
+        {
             if (computer.HP <= 0)
             {
-                Console.WriteLine($"Player {player.Name} won!");
+                Console.WriteLine($"{player.Name} won!");
                 return true;
             }
-            if(player.HP<=0)
+            if (player.HP <= 0)
             {
-                Console.WriteLine($"Player {computer.Name} won!");
+                Console.WriteLine($"{computer.Name} won!");
                 return true;
             }
             return false;
