@@ -8,16 +8,16 @@ namespace SwordAndBarbarians
 {
     class Battel
     {
-        public void Attack(Combatant playerThatShouldTakeDamage)
+        public void Attack(Combatant combatant)
         {
             int damage = 2;
-            playerThatShouldTakeDamage.HP -= damage;
+            combatant.HP -= damage;
         }
-        public void BigAttack(Combatant playerThatShouldTakeDamage)
+        public void BigAttack(Combatant combatant)
         {
             int randomAttackPower = new Random().Next(0, 3);
             int dagmage = 2 * randomAttackPower;
-            playerThatShouldTakeDamage.HP -= dagmage;
+            combatant.HP -= dagmage;
         }
         public void ComputerPlay(Combatant userPlayer)
         {
